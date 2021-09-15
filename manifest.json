@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "SO Focused",
+  "version": "1.0",
+  "description": "Hides the \"Hot Network Questions\" sidebar on StackOverflow and related sites.",
+  "author": "Rob Cowsill",
+  "homepage_url": "https://github.com/rcowsill/SO-Focused",
+  "icons": {
+    "48": "icons/SO-Focused-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.askubuntu.com/*",
+        "*://*.serverfault.com/*",
+        "*://*.stackapps.com/*",
+        "*://*.stackexchange.com/*",
+        "*://*.stackoverflow.com/*",
+        "*://*.superuser.com/*"
+      ],
+      "run_at": "document_start",
+      "css": ["css/hide-hnq.css"]
+    }
+  ]
+}
