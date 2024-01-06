@@ -23,4 +23,4 @@ jobs:
           persist-credentials: false
 
       - name: Perform CodeQL Analysis
-        uses: rcowsill/workflow-scan-action@v1
+        uses: rcowsill/workflow-scan-action@cbffc4f56501ffcc1a6f5defd04d60379298062a
