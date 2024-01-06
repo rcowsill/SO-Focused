@@ -1,7 +1,7 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "SO Focused",
-  "version": "1.2",
+  "version": "1.3",
   "description": "Hides distracting sidebar elements on StackOverflow and related sites.",
   "author": "Rob Cowsill",
   "homepage_url": "https://github.com/rcowsill/SO-Focused",
@@ -23,5 +23,13 @@
         "css/hide-distractions.css"
       ]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{07a74b57-b43e-46c3-9db4-892298ae1a4d}",
+      "strict_min_version": "69.0"
+    },
+    "gecko_android": {
+    }
+  }
 }
